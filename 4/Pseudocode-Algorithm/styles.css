@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #b3e2ff;
@@ -89,3 +88,10 @@ td:hover {
     background-color: #3972cd; 
 
 }
+
+pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+  }

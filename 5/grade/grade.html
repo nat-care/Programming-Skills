@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT GRADE</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="grade.css" />
+  </head>
+  <body>
+    <div>
+      <h1>STUDENT GRADE</h1>
+      <table>
+        <tr>
+          <th>รหัสวิชา</th>
+          <th>คะแนนที่ได้ (0 - 100)</th>
+          <th>จำนวนหน่วยกิต</th>
+        </tr>
+        <tr>
+          <td>CSI101</td>
+          <td>
+            <input
+              type="number"
+              id="score1"
+              min="0"
+              max="100"
+              oninput="validateInput(this)"
+            />
+          </td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>CSI102</td>
+          <td>
+            <input
+              type="number"
+              id="score2"
+              min="0"
+              max="100"
+              oninput="validateInput(this)"
+            />
+          </td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>CSI203</td>
+          <td>
+            <input
+              type="number"
+              id="score3"
+              min="0"
+              max="100"
+              oninput="validateInput(this)"
+            />
+          </td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>CSI204</td>
+          <td>
+            <input
+              type="number"
+              id="score4"
+              min="0"
+              max="100"
+              oninput="validateInput(this)"
+            />
+          </td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>CSI305</td>
+          <td>
+            <input
+              type="number"
+              id="score5"
+              min="0"
+              max="100"
+              oninput="validateInput(this)"
+            />
+          </td>
+          <td>3</td>
+        </tr>
+      </table>
+      <button onclick="calculateGPA()">คำนวณ GPA</button>
+      <h3 id="result"></h3>
+    </div>
+    <script src="grade.js"></script>
+  </body>
+</html>

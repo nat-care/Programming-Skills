@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lottery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="lottery.css" />
+  </head>
+  <body>
+    <div>
+      <h2>ระบบสุ่มเลขหวย</h2>
+      <h3 id="lotteryNumber"></h3>
+      <h3>🔹 เลขหน้า 3 ตัว: <span id="front3">-</span></h3>
+      <h3>🔹 เลขท้าย 3 ตัว: <span id="back3">-</span></h3>
+      <h3>🔹 เลขท้าย 2 ตัว: <span id="back2">-</span></h3>
+    </div>
+    <p>กรอกเลข 6 หลักที่คุณต้องการทาย:</p>
+    <input
+      type="text"
+      id="userGuess"
+      maxlength="6"
+      pattern="\d{6}"
+      placeholder="000000"
+      oninput="validateInput(this)"
+    />
+    <br />
+    <button onclick="checkLottery()">ตรวจสอบผล</button>
+
+    <h3 id="result"></h3>
+    <script src="lottery.js"></script>
+  </body>
+</html>

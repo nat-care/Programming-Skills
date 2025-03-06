@@ -13,6 +13,18 @@
   <body>
     <div class="Basic">
       <h1>Basic Algorithm</h1>
+      <pre>
+        START
+          DISPLAY "กรุณาใส่รัศมี (radius):"
+          INPUT radius
+          IF radius &lt; 0 THEN
+            DISPLAY "รัศมีต้องเป็นค่าบวก"
+          ELSE
+            area = PI * radius * radius
+            DISPLAY "พื้นที่วงกลมคือ: " + area
+          ENDIF
+        END
+            </pre>
       <label for="radius" style="color: #2ca8cd">Enter radius:</label>
       <input type="number" id="radius" placeholder="Enter radius" required />
       <button onclick="calculateCircleArea()">Calculate Area</button>
@@ -41,7 +53,6 @@
       <h1>เรียงลำดับข้อมูลในตาราง</h1>
         <button onclick="populateTable()">สร้างข้อมูลใหม่</button>        
         <button onclick="sortTable('bubble')">เรียงข้อมูล</button>
-        <button onclick="sortTable('bubble-1')">เรียงข้อมูล</button>
         <table id="dataTable">
             <thead>
                 <tr>
@@ -50,6 +61,21 @@
             </thead>
             <tbody></tbody>
         </table>
+    </div>
+
+    <div class="Recursive">
+      <h1>Recursive Algorithm</h1>
+      <h3>5.1 คำนวณ Factorial</h3>
+      <p>ป้อนเลขสำหรับคำนวณ Factorial:</p> &nbsp;
+      <input type="number" id="factorialInput" placeholder="Enter a number" required>
+      <button onclick="calculateFactorial()">Calculate Factorial</button>
+      <div class="result" id="factorialResult"></div>
+
+      <h3>5.2 คำนวณ Fibonacci Sequence</h3>
+      <p>ป้อนตำแหน่งในลำดับ Fibonacci:</p>
+      <input type="number" id="fibonacciInput" placeholder="ระบุตำแหน่ง">
+      <button onclick="calculateFibonacci()">คำนวณ Fibonacci</button>
+      <div class="result" id="fibonacciResult"></div>
     </div>
 
     <script src="script.js" defer></script>
