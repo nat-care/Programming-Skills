@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudocode - Algorithmr</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="Basic">
+      <h1>Basic Algorithm</h1>
+      <label for="radius" style="color: #2ca8cd">Enter radius:</label>
+      <input type="number" id="radius" placeholder="Enter radius" required />
+      <button onclick="calculateCircleArea()">Calculate Area</button>
+      <p id="result"></p>
+    </div>
+    <div class="Age">
+      <h1>Conditional Algorithm</h1>
+      <label for="age">กรอกอายุของคุณ:</label>
+      <input type="number" id="age" placeholder="กรอกอายุ" required />
+      <label for="number">กรอกตัวเลข:</label>
+      <input type="number" id="number" placeholder="กรอกตัวเลข" required />
+      <button onclick="checkAgeAndNumber()">ตรวจสอบ</button>
+      <p id="ageResult"></p>
+      <p id="numberResult"></p>
+    </div>
+    &nbsp;
+      <h1>แสดงเลข 1-10 ด้วย For Loop</h1>
+    <button onclick="showNumbers()">แสดงตัวเลข</button>
+    <p id="numberList"></p>      
+    &nbsp;
+    <h1>รับค่าจากผู้ใช้จนกว่าพิมพ์ "exit"</h1>
+    <button onclick="startInputLoop()">เริ่มรับค่า</button>
+    <p id="userInputList"></p>
+
+    <div class="table">
+      <h1>เรียงลำดับข้อมูลในตาราง</h1>
+        <button onclick="populateTable()">สร้างข้อมูลใหม่</button>        
+        <button onclick="sortTable('bubble')">เรียงข้อมูล</button>
+        <button onclick="sortTable('bubble-1')">เรียงข้อมูล</button>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                  <!-- ข้อมูลตาราง -->
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

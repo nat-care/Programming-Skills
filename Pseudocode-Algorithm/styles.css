@@ -1,0 +1,91 @@
+*{
+    font-family: 'Itim',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #b3e2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Basic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #1978af;
+}
+
+label {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px;
+    font-size: 1em;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+p{
+    color: #2ca8cd;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    
+}
+
+.Age{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width:60%; 
+    margin: 20px auto; 
+    border-collapse: collapse; 
+}
+ td {
+    padding: 6px; 
+    text-align: center; 
+    border: 1px solid #250c27; 
+}
+td {
+
+    background-color: #faeafd; 
+}
+td:hover {
+    background-color: #3972cd; 
+
+}

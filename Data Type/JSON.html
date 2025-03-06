@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Handling in JavaScript</title>
+</head>
+<body>
+    <script>
+        // สร้างข้อมูล JSON
+        let data = '{"name": "Tom", "age": 20, "grade": "A"}';
+
+        // อ่านข้อมูล JSON
+        let parsedData = JSON.parse(data);
+
+        // แสดงข้อมูลที่อ่านจาก JSON
+        console.log("Parsed JSON:", parsedData);
+
+        // เขียนข้อมูลกลับเป็น JSON
+        let jsonData = JSON.stringify(parsedData, null, 4);
+
+        // แสดงข้อมูล JSON
+        console.log("JSON Data:", jsonData);
+    </script>
+</body>
+</html>
